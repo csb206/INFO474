@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFO474</title>
+    <link rel="icon" type="image/png" href="res/graphs.png">
+
+    <!-- Includes plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Includes jQuery and jQuery UI--> 
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<div id="title" class="header">
+		<h2>Data Visualization Assignment</h2>
+		<h4>By Cory Brown</h3>
+	</div>
+	  <div id="description" class="contentpanel">
+		<h3>Example 1: The Means of MIC Levels per Treatment</h3>
+		<h4>Question: What are the averages of MIC levels across treatments for each grain stain category?</h4>
+		<p>
+			This grouped bar char is a simple and understandable way to see the means of the MIC levels for each grain stain result. I decided to group them by treatment with the two sub groups being their grain stain result, positive or negative. This helps convey the differences in data sets between MIC levels and their positive or negative correlations. This example can be portrayed as a summary of the second example. There is less data shown but the outcome the viewer depicts from the graph is simillar. 
+		</p>
+		<p>
+			Displaying the different average levels of MIC across treatments helps the data analyst understand the data. There is a need for perceiving position and length. Since position is the most effective way to view general data, this bar chart is a good choice because comparing each group is very intuitive and clear. 
+		</p>
+	</div>
+    <div id="graph1"></div>
+	<div id="description" class="contentpanel">
+		<h3>Example 2: Gram Stain vs MIC Level</h3>
+		<h4>Question: How does gram staining affect the MIC levels for the following treatments of bacteria?</h4>
+		<p> 
+			For this second example, there are box charts for each gram stain result of each treatment for the given bacterial infections in the data set. The box charts in the graph shows the implications of the gram stain result. Gathering this data, shows there is some evidence that the gram stain result and the MIC level have interrelated relationship. Specifically with penicilin, the log-transformed MIC levels of all positive penicilin grain stains were less than 1.0. The negative grain stain results for pencilin had MIC levels above 1.0 respectively. The mean of the positive and negative grain stain MIC levels were about 10.0 apart. The Penicilin results for positive grain stain MIC levels has a set of data with a smaller standard deviation than the negative grain stain set. 
+		</p>
+		<p>
+			The Streptomycin and Neomycin positive and negative grain stain results did not have this pattern. Both of the means for their positive and negative grain stain data sets are the same. This shows that the relationships of Streptomycin and Neomycin grain stain results and the MIC levels from treatment are very similiar. This doesnt mean that these four columns of data are more effective, I think the anomalies associated with Penicilin and its positive and negative grain stain/MIC level difference is powerful data.  
+		</p>
+		<p>
+			Scaling down the graph and taking the logarithmic value of the MIC levels allowed the data to be concise and visible to the users. Using the box chart type allows users to clearly understand the means and standard deviation of the MIC levels of each treatment's grain stain result. Talk about log differences.
+		</p>	
+	</div>
+    <div id="graph2"></div>
+    <div id="description" class="contentpanel">
+		<h3>Example 3: Minimum Inhibitory Concentration Levels</h3>
+		<h4>Question: Are there any clusters or groups of MIC level data points that share the same patterns among treatments?</h4>
+		<p>
+			In this 3D scatter plot as the third example, all the log transformed MIC levels are cross-referenced between the three treatments. This allows for multivariate data to be accessed while using many variables to provide even more information about the groups of data. Data usually has a patterns, and clustering is a pattern of 3d scatter plots that represent the tendencies of a data set. There are some patterns within this data that suggests the groups are producing different results. There are many hypothesis one could claim given this visualization. 
+		</p>
+		<p>
+			There were a few clusters identified by transforming the data into this graph. There is a group of 3 in the upper right corner of the default view. Based on the three largest MCI levels for Penicilin in the 800's, I believe this cluster are those data points in this graphical form. Below those three points, there is less grouping. But this is made up for in direction, a viewer can easily connect the dots. This data visualization proves there are outliers in the data, but another portion of the averaged data fluctuates up and down. With a range of around 4.0, there is alot of variations within the data set to be manipulated. 
+		</p>
+	</div>
+    <div id="graph3"></div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

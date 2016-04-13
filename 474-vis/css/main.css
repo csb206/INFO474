@@ -1,0 +1,21 @@
+#myDiv {
+    width: 100%;
+    height: 100vh;
+}
+
+div#title.header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	text-align: center;
+}
+
+div#description.contentpanel {
+	padding-left: 8em;
+	padding-right: 8em;
+}
+
+ div#title.header {
+	padding-bottom: 2em;
+	padding-top: 1em;
+}
