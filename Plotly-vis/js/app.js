@@ -192,8 +192,7 @@ function makePlotly(penPos, penNeg, strPos, strNeg, neoPos, neoNeg) {
             y: dataValues[i],
             mode: 'markers',
             type: 'box',
-            boxpoints: 'all',
-            
+            boxpoints: 'all',   
         };
         data.push(plot);
     }
